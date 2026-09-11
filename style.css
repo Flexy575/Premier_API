@@ -11,6 +11,7 @@ body {
   width: 500px;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -28,6 +29,8 @@ input {
   flex: 1;
   padding: 10px;
   font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 #addBtn {
@@ -36,6 +39,8 @@ input {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
 }
 
 #userList {
@@ -51,12 +56,32 @@ input {
   padding: 12px;
   margin-bottom: 8px;
   border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .delete-btn {
   background-color: #ff4d4d;
   color: white;
   border: none;
-  padding: 6px 12px;
+  padding: 6px 10px;
   cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 0.9;
 }
